@@ -1,3 +1,7 @@
+# Regent-mode
+
+An Emacs major mode for Regent based on Lua-mode.
+
 # Lua mode
 
 [![Build Status](https://travis-ci.org/immerrr/lua-mode.svg?branch=master)](https://travis-ci.org/immerrr/lua-mode)
