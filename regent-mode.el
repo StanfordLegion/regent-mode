@@ -1145,7 +1145,7 @@ ignored, nil otherwise."
      (regexp-opt '("{" "(" "[" "]" ")" "}") t))))
 
 (defconst regent-block-token-alist
-  '(("do"       "\\_<end\\_>"   "\\_<for\\|while\\_>"                       middle-or-open)
+  '(("do"       "\\_<end\\_>"   "\\_<for\\|while\\|where\\_>"                       middle-or-open) ;; Regent keywords
     ("function" "\\_<end\\_>"   nil                                       open)
     ("repeat"   "\\_<until\\_>" nil                                       open)
     ("then"     "\\_<\\(e\\(lse\\(if\\)?\\|nd\\)\\)\\_>" "\\_<\\(else\\)?if\\_>" middle)
