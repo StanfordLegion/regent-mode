@@ -1,6 +1,6 @@
-# Regent-mode
+# Regent mode
 
-An Emacs major mode for Regent based on [lua-mode](https://github.com/immerrr/lua-mode).
+An Emacs major mode for [Regent](http://regent-lang.org/) based on [lua-mode](https://github.com/immerrr/lua-mode).
 
 # Lua mode
 
