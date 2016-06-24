@@ -278,6 +278,8 @@ element is itself expanded with `regent-rx-to-string'. "
                        "relaxed"
                        "release"
                        "region"
+                       "rexpr"
+                       "rquote"
                        "simultaneous"
                        "static_cast"
                        "task"
@@ -783,6 +785,8 @@ Groups 6-9 can be used in any of argument regexps."
                       ("terra" . "end")
 
                       ;; Regent keywords
+                      ("rexpr" . "end")
+                      ("rquote" . "end")
                       ("task" . "end")
                       ))
 
@@ -1140,6 +1144,8 @@ ignored, nil otherwise."
                    "terra"
 
                    ;; Regent keywords
+                   "rexpr"
+                   "rquote"
                    "task"
                    ) t)
      "\\_>\\)\\|"
@@ -1170,8 +1176,10 @@ ignored, nil otherwise."
     ("terra"    "\\_<end\\_>" nil                                       open)
 
     ;; Regent keywords
-    ("task"    "\\_<end\\_>" nil                                        open)
-    ("where"   "\\_<do\\_>"  "\\_<task\\_>"                             middle)
+    ("rexpr"    "\\_<end\\_>" nil                                        open)
+    ("rquote"   "\\_<end\\_>" nil                                        open)
+    ("task"     "\\_<end\\_>" nil                                        open)
+    ("where"    "\\_<do\\_>"  "\\_<task\\_>"                             middle)
     )
   "This is a list of block token information blocks.
 Each token information entry is of the form:
@@ -1195,6 +1203,8 @@ TOKEN-TYPE determines where the token occurs on a statement. open indicates that
                  "terra"
 
                  ;; Regent keywords
+                 "rexpr"
+                 "rquote"
                  "task"
                  "where") t)
    "\\_>\\|"
@@ -1358,6 +1368,8 @@ Returns final value of point as integer or nil if operation failed."
                    "var"
 
                    ;; Regent keywords
+                   "rexpr"
+                   "rquote"
                    "fspace"
                    "task")
                  t)
@@ -1475,6 +1487,8 @@ use standalone."
                          "terra"
 
                          ;; Regent keywords
+                         "rexpr"
+                         "rquote"
                          "task"))
     (cons 'relative regent-indent-level))
 
