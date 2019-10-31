@@ -1174,7 +1174,7 @@ ignored, nil otherwise."
     ("while"    "\\_<do\\_>"    nil                                       open)
     ("else"     "\\_<end\\_>"   "\\_<then\\_>"                              middle)
     ("elseif"   "\\_<then\\_>"  "\\_<then\\_>"                              middle)
-    ("end"      nil           "\\_<\\(do\\|function\\|then\\|else\\|quote\\|terra\\|task\\|where\\)\\_>" close) ;; Terra and Regent keywords
+    ("end"      nil           "\\_<\\(do\\|function\\|then\\|else\\|escape\\|quote\\|terra\\|rexpr\\|rquote\\|task\\|where\\)\\_>" close) ;; Terra and Regent keywords
     ("until"    nil           "\\_<repeat\\_>"                            close)
     ("}"        nil           "{"                                       close)
     ("]"        nil           "\\["                                     close)
